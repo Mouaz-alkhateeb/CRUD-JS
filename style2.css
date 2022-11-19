@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #222;
+}
+
+
+
+
+
+.warpper {
+    background-color: #fff;
+    max-width: 410px;
+    border-radius: 10px;
+    padding: 16px 25px;
+    height: 260px;
+    transition: height 0.2s ease;
+}
+
+.warpper.active {
+    height: 530px;
+}
+
+.warpper .qr-code {
+    border: 1px solid #ccc;
+    padding: 33px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.warpper.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.warpper.active header h1 {
+    font-size: 16px;
+    color: #474747;
+    margin-top: 5px;
+
+}
+
+.warpper .form {
+    margin: 20px 0 25px;
+}
+
+.form :where(input, button) {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form input {
+    border: 1px solid #999;
+    font-size: 18px;
+    padding: 0 17px;
+
+}
+
+.form button {
+    background-color: rgb(54, 3, 3);
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.warpper .qr-code {
+    border: 1px solid #ccc;
+    padding: 33px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+input:focus {
+    background-color: rgb(167, 162, 162);
+}
